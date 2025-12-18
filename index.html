@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light-mode">
+<div id="particles-js"></div>
+<!-- Musik -->
+<audio id="backgroundMusic" autoplay loop>
+  <source src="music/tiara-andini-arsy-widianto-lagu-pernikahan-kita.mp3" type="audio/mpeg" />
+  Browser tidak mendukung audio.
+</audio>
+<button class="btn btn-sm btn-outline-primary position-fixed top-0 end-0 m-3" onclick="toggleMusic()">🔈</button>
+
+<!-- Bahasa & Mode -->
+<div class="position-fixed top-0 start-0 m-3 d-flex gap-2">
+  <select id="langSwitcher" onchange="switchLanguage()" class="form-select form-select-sm">
+    <option value="id">ID</option>
+    <option value="en">EN</option>
+  </select>
+  <button onclick="toggleDarkMode()" class="btn btn-sm btn-outline-secondary">🌓</button>
+</div>
+
+<header class="bg-dark text-white text-center py-5">
+  <img src="img/p.jpeg" alt="Foto Profil" class="profile-img" width="150">
+  <h1 id="name">Dendy Ahmad Ridwan</h1>
+  <p class="lead" id="subtitle">Web Developer | UI/UX Designer</p>
+    <p id="description" class="about-section">
+    Saya adalah seorang pengembang web yang bersemangat membangun aplikasi yang fungsional dan estetis. 
+    Dengan pengalaman di front-end dan back-end, saya siap membantu Anda mewujudkan ide digital menjadi kenyataan.
+  </p>
+  <a href="https://drive.google.com/drive/folders/1hNehzNrbocUM5OTBidcRTaE-kkwnaDAF" class="btn btn-outline-light" download id="btnDownloadCV">Download CV</a>
+</header>
+
+<main class="container my-5">
+  <section>
+    <h2 id="resumeTitle">Resume</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h4 id="eduTitle">Pendidikan</h4>
+        <ul id="eduList">
+          <li>S1 Informatika – Universitas Pamulang (2019–2024)</li>
+          <li>MAN 1 Tangerang (2014–2017)</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h4 id="expTitle">Pengalaman</h4>
+        <ul id="expList">
+          <li>PT Sumber Alfaria Trijaya, Tbk. (2018–2020)</li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+    <h4 class="mt-4" id="skillsTitle">Keterampilan</h4>
+    <ul id="skillsList">
+      <li>HTML, CSS, JS, Bootstrap</li>
+      <li>PHP, MySQL, CodeIgniter</li>
+	  <li>Java, android studio</li>
+      <li>UI/UX Design (Figma, Adobe XD)</li>
+    </ul>
+  </section>
+
+  <section class="my-5">
+    <h2 id="portfolioTitle">Proyek Portofolio</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-3">
+          <img src="img/P1.png" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Project Cashier</h5>
+            <p class="card-text">Fitur admin kelola data produk, laporan penjualan dan melihat grafik.</p>
+			<p class="card-text">Fitur kasir Tanda terima pelanggan, Pembayaran, dan cetak nota atau nota whatsapp.</p>
+          </div>
+		  <div class="card mb-3">
+          <img src="img/P2.png" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Project Undangan Digital</h5>
+            <p class="card-text">Fitur Template undangan Silver, Gold, Platinum, Membership, Rsvp melalui google drive mengunakan Excel</p>
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 & 3 similar -->
+    </div>
+  </section>
+
+  <section>
+    <h2 id="contactTitle">Kontak</h2>
+    <p>Email: dendyahmadridwan98@email.com</p>
+    <p>WhatsApp: <a href="https://wa.me/">klik</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/dendy-ahmad-ridwan-51424a23a">klik</a></p>
+  </section>
+</main>
+
+<footer class="bg-dark text-white text-center py-3">
+  <p>&copy; 2025 <span id="footerName">Dendy</span>. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- CDN Particles.js -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+<!-- Konfigurasi Partikel Salju -->
+<script>
+  particlesJS("particles-js", {
+    "particles": {
+      "number": {
+        "value": 200,  /* Jumlah partikel salju */
+        "density": {
+          "enable": true,
+          "value_area": 1000
+        }
+      },
+      "color": {
+        "value": "#ffffff"  /* Warna salju putih */
+      },
+      "shape": {
+        "type": "circle",  /* Bentuk bulat seperti salju */
+        "stroke": {
+          "width": 0,
+          "color": "#000000"
+        }
+      },
+      "opacity": {
+        "value": 0.6,  /* Transparansi salju */
+        "random": true
+      },
+      "size": {
+        "value": 3,  /* Ukuran salju */
+        "random": true
+      },
+      "move": {
+        "enable": true,
+        "speed": 1,  /* Kecepatan salju turun */
+        "direction": "top",  /* Arah gerakan: dari atas ke bawah */
+        "out_mode": "out"
+      }
+    },
+    "interactivity": {
+      "events": {
+        "onhover": {
+          "enable": false
+        }
+      }
+    },
+    "retina_detect": true
+  });
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
