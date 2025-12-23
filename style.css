@@ -92,3 +92,10 @@ body.dark-mode {
   color: white;
   text-align: center;
 }
+
+.card-body {
+  position: relative;
+  z-index: -1;
+}
+
+
