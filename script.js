@@ -22,7 +22,7 @@ const translations = {
     skillsTitle: "Keterampilan",
     portfolioTitle: "Proyek Portofolio",
     contactTitle: "Kontak",
-	fiturTitle: "
+	fiturTitle: "Fitur admin kelola data produk, laporan penjualan dan melihat grafik. Fitur kasir Tanda terima pelanggan, Pembayaran, dan cetak nota atau nota whatsapp. Fitur admin kelola data barang, kategori, supplier, lokasi gudang, penyesuaian stok, log aktivitas, manajemen pengguna, barang masuk, barang keluar dan laporan. Fitur petugas data barang, barang masuk, barang keluar dan laporan.",
   },
   en: {
     subtitle: "Web Developer | UI/UX Designer",
@@ -34,6 +34,7 @@ const translations = {
     skillsTitle: "Skills",
     portfolioTitle: "Portfolio Projects",
     contactTitle: "Contact",
+	fiturTitle: "Fitur admin kelola data produk, laporan penjualan dan melihat grafik. Fitur kasir Tanda terima pelanggan, Pembayaran, dan cetak nota atau nota whatsapp. Fitur admin kelola data barang, kategori, supplier, lokasi gudang, penyesuaian stok, log aktivitas, manajemen pengguna, barang masuk, barang keluar dan laporan. Fitur petugas data barang, barang masuk, barang keluar dan laporan.",
   }
 };
 
@@ -44,4 +45,5 @@ function switchLanguage() {
     document.getElementById(id).textContent = t[id];
   }
 }
+
 
