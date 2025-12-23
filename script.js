@@ -24,7 +24,7 @@ const translations = {
     contactTitle: "Kontak",
 	adminTitle: "Fitur admin kelola data produk, laporan penjualan dan melihat grafik.",
 	kasirTitle: "Fitur kasir Tanda terima pelanggan, Pembayaran, dan cetak nota atau nota whatsapp.",
-	adminTitle: "Fitur admin kelola data barang, kategori, supplier, lokasi gudang, penyesuaian stok, log aktivitas, manajemen pengguna, barang masuk, barang keluar dan laporan.",
+	adminvTitle: "Fitur admin kelola data barang, kategori, supplier, lokasi gudang, penyesuaian stok, log aktivitas, manajemen pengguna, barang masuk, barang keluar dan laporan.",
 	petugasTitle: "Fitur petugas data barang, barang masuk, barang keluar dan laporan.",
   },
   en: {
@@ -39,7 +39,7 @@ const translations = {
     contactTitle: "Contact",
 	adminTitle: "Admin features allow you to manage product data, report sales, and view graphs.",
 	kasirTitle: "Cashier features allow you to receive customer receipts, make payments, and print receipts or WhatsApp notes.",
-	adminTitle: "Admin features manage item data, categories, suppliers, warehouse locations, stock adjustments, activity logs, user management, incoming and outgoing goods, and reports.",
+	adminvTitle: "Admin features manage item data, categories, suppliers, warehouse locations, stock adjustments, activity logs, user management, incoming and outgoing goods, and reports.",
 	petugasTitle: "Officer features manage item data, incoming and outgoing goods, and reports.",
   }
 };
@@ -51,6 +51,7 @@ function switchLanguage() {
     document.getElementById(id).textContent = t[id];
   }
 }
+
 
 
 
