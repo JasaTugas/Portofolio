@@ -37,9 +37,9 @@ const translations = {
     skillsTitle: "Skills",
     portfolioTitle: "Portfolio Projects",
     contactTitle: "Contact",
-	adminTitle: "Admin features allow you to manage product data, report sales, and view graphs.",
+	penjualanTitle: "Admin features allow you to manage product data, report sales, and view graphs.",
 	kasirTitle: "Cashier features allow you to receive customer receipts, make payments, and print receipts or WhatsApp notes.",
-	adminvTitle: "Admin features manage item data, categories, suppliers, warehouse locations, stock adjustments, activity logs, user management, incoming and outgoing goods, and reports.",
+	inventoriTitle: "Admin features manage item data, categories, suppliers, warehouse locations, stock adjustments, activity logs, user management, incoming and outgoing goods, and reports.",
 	petugasTitle: "Officer features manage item data, incoming and outgoing goods, and reports.",
   }
 };
@@ -51,6 +51,7 @@ function switchLanguage() {
     document.getElementById(id).textContent = t[id];
   }
 }
+
 
 
 
