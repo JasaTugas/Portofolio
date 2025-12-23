@@ -22,9 +22,9 @@ const translations = {
     skillsTitle: "Keterampilan",
     portfolioTitle: "Proyek Portofolio",
     contactTitle: "Kontak",
-	adminTitle: "Fitur admin kelola data produk, laporan penjualan dan melihat grafik.",
+	penjualanTitle: "Fitur admin kelola data produk, laporan penjualan dan melihat grafik.",
 	kasirTitle: "Fitur kasir Tanda terima pelanggan, Pembayaran, dan cetak nota atau nota whatsapp.",
-	adminvTitle: "Fitur admin kelola data barang, kategori, supplier, lokasi gudang, penyesuaian stok, log aktivitas, manajemen pengguna, barang masuk, barang keluar dan laporan.",
+	inventoriTitle: "Fitur admin kelola data barang, kategori, supplier, lokasi gudang, penyesuaian stok, log aktivitas, manajemen pengguna, barang masuk, barang keluar dan laporan.",
 	petugasTitle: "Fitur petugas data barang, barang masuk, barang keluar dan laporan.",
   },
   en: {
@@ -51,6 +51,7 @@ function switchLanguage() {
     document.getElementById(id).textContent = t[id];
   }
 }
+
 
 
 
