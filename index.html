@@ -9,20 +9,32 @@
 </head>
 <body class="light-mode">
 <div id="particles-js"></div>
-<!-- Musik -->
-<audio id="backgroundMusic" autoplay loop>
-  <source src="kerja-keras-dan-doa.mp3" type="audio/mpeg" />
-  Browser tidak mendukung audio.
-</audio>
-<button class="btn btn-sm btn-outline-primary position-fixed top-0 end-0 m-3" onclick="toggleMusic()">🔈</button>
+<hr class="my-5">
 
-<!-- Bahasa & Mode -->
-<div class="position-fixed top-0 start-0 m-3 d-flex gap-2">
-  <select id="langSwitcher" onchange="switchLanguage()" class="form-select form-select-sm">
-    <option value="id">ID</option>
-    <option value="en">EN</option>
-  </select>
-  <button onclick="toggleDarkMode()" class="btn btn-sm btn-outline-secondary">🌓</button>
+<div class="container text-center">
+  <div class="card shadow-sm">
+    <div class="card-body">
+      <h5 class="mb-3">⚙️ Pengaturan Tampilan</h5>
+
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <!-- Bahasa -->
+        <select id="langSwitcher" onchange="switchLanguage()" class="form-select w-auto">
+          <option value="id">🇮🇩 Indonesia</option>
+          <option value="en">🇬🇧 English</option>
+        </select>
+
+        <!-- Dark Mode -->
+        <button onclick="toggleDarkMode()" class="btn btn-outline-secondary">
+          🌓 Dark / Light
+        </button>
+
+        <!-- Musik -->
+        <button onclick="toggleMusic()" class="btn btn-outline-primary">
+          🎵 Musik
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
 
 <header class="bg-dark text-white text-center py-5">
@@ -155,6 +167,7 @@
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
