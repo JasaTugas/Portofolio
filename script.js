@@ -22,6 +22,7 @@ const translations = {
     skillsTitle: "Keterampilan",
     portfolioTitle: "Proyek Portofolio",
     contactTitle: "Kontak",
+	fiturTitle: "
   },
   en: {
     subtitle: "Web Developer | UI/UX Designer",
@@ -43,3 +44,4 @@ function switchLanguage() {
     document.getElementById(id).textContent = t[id];
   }
 }
+
