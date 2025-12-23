@@ -29,14 +29,14 @@ const translations = {
     subtitle: "Web Developer | UI/UX Designer",
     btnDownloadCV: "Download Resume",
     resumeTitle: "Resume",
-	description: "I’m a passionate web developer who loves building functional and aesthetic applications. With experience in both front-end and back-end, I’m ready to turn your digital ideas into reality.",
+	description: "I'm a web developer passionate about building functional and aesthetically pleasing applications. With experience in both front-end and back-end development, I'm ready to help you turn your digital ideas into reality.",
     eduTitle: "Education",
     expTitle: "Experience",
     skillsTitle: "Skills",
     portfolioTitle: "Portfolio Projects",
     contactTitle: "Contact",
-	kasirTitle: "Fitur admin kelola data produk, laporan penjualan dan melihat grafik. Fitur kasir Tanda terima pelanggan, Pembayaran, dan cetak nota atau nota whatsapp.",
-	inventoriTitle: "Fitur admin kelola data barang, kategori, supplier, lokasi gudang, penyesuaian stok, log aktivitas, manajemen pengguna, barang masuk, barang keluar dan laporan. Fitur petugas data barang, barang masuk, barang keluar dan laporan.",
+	kasirTitle: "Admin features allow you to manage product data, report sales, and view graphs. Cashier features allow you to receive customer receipts, make payments, and print receipts or WhatsApp notes.",
+	inventoriTitle: "Admin features manage item data, categories, suppliers, warehouse locations, stock adjustments, activity logs, user management, incoming and outgoing goods, and reports. Officer features manage item data, incoming and outgoing goods, and reports.",
   }
 };
 
@@ -47,6 +47,7 @@ function switchLanguage() {
     document.getElementById(id).textContent = t[id];
   }
 }
+
 
 
 
