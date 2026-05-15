@@ -148,29 +148,28 @@
 </script>
 
 <script>
-// AUTO SCROLL KE BAWAH
-window.onload = function(){
+// AUTO SCROLL SLOW MOTION
+window.onload = function () {
 
-    // scroll otomatis ke bawah
-    window.scrollTo({
-        top: document.body.scrollHeight,
-        behavior: "smooth"
-    });
+    let scrollSpeed = 1; // semakin kecil semakin pelan
+    let autoScroll = setInterval(() => {
 
-    // berhenti setelah 3 detik
-    setTimeout(() => {
-        window.scrollTo({
-            top: window.scrollY,
-            behavior: "auto"
-        });
-    }, 3000);
+        window.scrollBy(0, scrollSpeed);
+
+        // berhenti saat sampai bawah
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+            clearInterval(autoScroll);
+        }
+
+    }, 10); // interval gerakan
 };
 
-// TAMPILKAN TOMBOL SAAT SCROLL
-window.onscroll = function() {
+// TOMBOL KE ATAS
+window.onscroll = function () {
+
     let btn = document.getElementById("topBtn");
 
-    if(document.documentElement.scrollTop > 200){
+    if (document.documentElement.scrollTop > 200) {
         btn.style.display = "block";
     } else {
         btn.style.display = "none";
@@ -178,11 +177,13 @@ window.onscroll = function() {
 };
 
 // KLIK TOMBOL KE ATAS
-document.getElementById("topBtn").onclick = function(){
+document.getElementById("topBtn").onclick = function () {
+
     window.scrollTo({
         top: 0,
         behavior: "smooth"
     });
+
 };
 </script>
 <script src="script.js"></script>
