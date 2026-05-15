@@ -89,7 +89,9 @@
 	<p>Instagram: <a href="https://www.instagram.com/dendy5812?igsh=anp2MW4wM2ZNTRo" target="_blank">Instagram</a></p>
   </section>
 </main>
-
+	<!-- Tombol Ke Atas -->
+<button id="topBtn">⬆</button>
+	
 <footer class="bg-dark text-white text-center py-3">
   <p>&copy; 2026 <span id="footerName">Dendy</span>. All rights reserved.</p>
 </footer>
@@ -145,6 +147,44 @@
   });
 </script>
 
+<script>
+// AUTO SCROLL KE BAWAH
+window.onload = function(){
+
+    // scroll otomatis ke bawah
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth"
+    });
+
+    // berhenti setelah 3 detik
+    setTimeout(() => {
+        window.scrollTo({
+            top: window.scrollY,
+            behavior: "auto"
+        });
+    }, 3000);
+};
+
+// TAMPILKAN TOMBOL SAAT SCROLL
+window.onscroll = function() {
+    let btn = document.getElementById("topBtn");
+
+    if(document.documentElement.scrollTop > 200){
+        btn.style.display = "block";
+    } else {
+        btn.style.display = "none";
+    }
+};
+
+// KLIK TOMBOL KE ATAS
+document.getElementById("topBtn").onclick = function(){
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+};
+</script>
 <script src="script.js"></script>
 </body>
 </html>
