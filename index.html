@@ -19,6 +19,7 @@
 		<option value="en">EN</option> 
 	</select> 
 	<button onclick="toggleDarkMode()" class="btn btn-sm btn-outline-secondary">🌓</button> </div>
+	<button id="toggleScrollBtn">Pause</button>
 
 <header class="bg-dark text-white text-center py-5">
   <img src="p.jpeg" alt="Foto Profil" class="profile-img" width="150">
@@ -148,20 +149,52 @@
 </script>
 
 <script>
-// AUTO SCROLL SLOW MOTION
-window.onload = function () {
 
-    let scrollSpeed = 1; // semakin kecil semakin pelan
-    let autoScroll = setInterval(() => {
+let autoScroll;
+let scrollSpeed = 1;
+let isScrolling = true;
+
+// FUNCTION START SCROLL
+function startScroll(){
+
+    clearInterval(autoScroll);
+
+    autoScroll = setInterval(() => {
 
         window.scrollBy(0, scrollSpeed);
 
-        // berhenti saat sampai bawah
+        // berhenti otomatis saat bawah
         if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
             clearInterval(autoScroll);
+            isScrolling = false;
+            document.getElementById("toggleScrollBtn").innerText = "Play";
         }
 
-    }, 10); // interval gerakan
+    }, 10);
+}
+
+// SAAT HALAMAN DIBUKA
+window.onload = function(){
+    startScroll();
+};
+
+// TOMBOL PLAY / PAUSE
+document.getElementById("toggleScrollBtn").onclick = function(){
+
+    if(isScrolling){
+
+        clearInterval(autoScroll);
+        this.innerText = "Play";
+        isScrolling = false;
+
+    } else {
+
+        startScroll();
+        this.innerText = "Pause";
+        isScrolling = true;
+
+    }
+
 };
 
 // TOMBOL KE ATAS
@@ -174,9 +207,10 @@ window.onscroll = function () {
     } else {
         btn.style.display = "none";
     }
+
 };
 
-// KLIK TOMBOL KE ATAS
+// KLIK KE ATAS
 document.getElementById("topBtn").onclick = function () {
 
     window.scrollTo({
