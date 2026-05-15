@@ -103,6 +103,7 @@ body.dark-mode {
 
     bottom: 20px;
     left: 15px;
+    right: auto !important;
 
     width: 45px;
     height: 45px;
@@ -118,8 +119,7 @@ body.dark-mode {
     color: #fff;
 
     z-index: 999;
-	
-    /* efek modern */
+
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     transition: 0.3s;
 }
