@@ -93,13 +93,6 @@ body.dark-mode {
   text-align: center;
 }
 
-.card-img-top{
-    width: 100%;
-    max-width: 200px;
-    height: 100px;
-    object-fit: contain;
-}
-
 .html{
     scroll-behavior: smooth;
 }
