@@ -95,7 +95,7 @@ body.dark-mode {
 
 .card-img-top{
     width: 100%;
-    max-width: 300px;
+    max-width: 150px;
     height: 300px;
     object-fit: cover;
 }
