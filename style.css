@@ -94,7 +94,7 @@ body.dark-mode {
 }
 
 .card-img-top{
-    width: 100%;
+    width: 500%;
     height: 100px; /* atur tinggi gambar */
     object-fit: cover;
 }
