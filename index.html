@@ -178,20 +178,24 @@ document.getElementById("toggleScrollBtn").onclick = function(){
 
     if(isScrolling){
 
+        // PAUSE
         clearInterval(autoScroll);
-        this.innerText = "Pause";
+
+        this.innerText = "Play";
+
         isScrolling = false;
 
     } else {
 
+        // PLAY
         startScroll();
-        this.innerText = "Play";
-        isScrolling = true;
 
+        this.innerText = "Pause";
+
+        isScrolling = true;
     }
 
 };
-
 // TOMBOL KE ATAS
 window.onscroll = function () {
 
