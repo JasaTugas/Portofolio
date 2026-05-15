@@ -51,13 +51,13 @@ footer {
   color: white;
 }
 body.light-mode {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #121212;
+  color: #ffffff;
 }
 
 body.dark-mode {
-  background-color: #121212;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
   
 }
 
