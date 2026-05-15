@@ -98,10 +98,10 @@ body.dark-mode {
 }
 
 /* Tombol */
-,topBtn{
+.topBtn{
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    left: 20px;
     display: none;
     padding: 12px 15px;
     border: none;
