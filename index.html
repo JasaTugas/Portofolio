@@ -179,13 +179,13 @@ document.getElementById("toggleScrollBtn").onclick = function(){
     if(isScrolling){
 
         clearInterval(autoScroll);
-        this.innerText = "Play";
+        this.innerText = "Pause";
         isScrolling = false;
 
     } else {
 
         startScroll();
-        this.innerText = "Pause";
+        this.innerText = "Play";
         isScrolling = true;
 
     }
